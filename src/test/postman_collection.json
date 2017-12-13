@@ -1,0 +1,247 @@
+{
+	"info": {
+		"name": "flight-right",
+		"_postman_id": "1aac3f18-4557-f4aa-d6bc-5a22814853e4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":1,\"firstName\":\"UserName\",\"lastName\":\"LastName\",\"dateOfBirth\":\"26-11-1987 09:34:29\"}"
+				},
+				"url": {
+					"raw": "localhost:8080/member",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member"
+					]
+				},
+				"description": "Create a member."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<member>\n\t<id>1</id>\n\t<firstName>UserNames</firstName>\n\t<lastName>LastName</lastName>\n\t<dateOfBirth>26-11-1987 09:34:29</dateOfBirth>\n</member>"
+				},
+				"url": {
+					"raw": "localhost:8080/member",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<member>\n\t<firstName>UserNames</firstName>\n\t<lastName>LastName</lastName>\n\t<dateOfBirth>26-11-1987 09:34:29</dateOfBirth>\n</member>"
+				},
+				"url": {
+					"raw": "localhost:8080/member",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/member/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"1"
+					]
+				},
+				"description": "xml get user"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/member/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"1"
+					]
+				},
+				"description": "get user json."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member/all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/member/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"all"
+					]
+				},
+				"description": "get all user xml"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member/all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/member/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"all"
+					]
+				},
+				"description": "get all user json"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/member/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"1"
+					]
+				},
+				"description": "delete user"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/member",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":2,\"firstName\":\"UserNamessss\",\"lastName\":\"LastName\",\"dateOfBirth\":\"26-11-1987 09:34:29\"}"
+				},
+				"url": {
+					"raw": "localhost:8080/member",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member"
+					]
+				},
+				"description": "update user json"
+			},
+			"response": []
+		}
+	]
+}
