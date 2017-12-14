@@ -2,7 +2,7 @@
 
 ## Service for user
 
-In this challenge a member service is implemented. Project contains the unit tests so you can understand the endpoints and others by following unit tests.
+In this project a member service is implemented. Project contains the unit tests so you can understand the endpoints and others by following unit tests.
 
 Please note that: according to `Accept` and `Content-Type` header in your request, app will decide which kind of data you want to retrieve.
 
